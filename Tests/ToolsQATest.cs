@@ -48,7 +48,7 @@ namespace AmazonTest.Tests
             Assert.IsTrue(ToolsQAcs.SubmitForm("Shahab", "shahab.dev@gmail.com"));
             test.Log(Status.Pass, "Submit the form successfully");
             Assert.IsTrue(ToolsQAcs.ClickSubmit());
-            test.Log(Status.Pass, "Click on the submit button successfully");
+            //test.Log(Status.Pass, "Click on the submit button successfully");
         }
         [Test]
         public void Test2()
