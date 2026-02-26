@@ -10,6 +10,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Results\**" />
+    <Compile Remove="Screenshots\**" />
+    <EmbeddedResource Remove="Results\**" />
+    <EmbeddedResource Remove="Screenshots\**" />
+    <None Remove="Results\**" />
+    <None Remove="Screenshots\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="coverlet.collector" Version="6.0.0" />
     <PackageReference Include="ExtentReports" Version="5.0.4" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.8.0" />
@@ -23,11 +32,6 @@
 
   <ItemGroup>
     <Using Include="NUnit.Framework" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Screenshots\" />
-    <Folder Include="Results\" />
   </ItemGroup>
 
   <ItemGroup>
